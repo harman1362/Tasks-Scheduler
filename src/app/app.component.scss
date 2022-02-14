@@ -1,0 +1,83 @@
+.head {
+    background-color: rgb(15, 102, 143);
+    color: white;
+    padding: 5px 0;
+  }
+  .form_section {
+    height: 20vh;
+    form {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+  
+      input {
+        border: none;
+        border-bottom: 1px solid rgb(58, 58, 58);
+      }
+      input:focus {
+        outline: none;
+      }
+    }
+  }
+  .display_list {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .form_section {
+      form {
+        left: 54%;
+  
+        input {
+          width: 50%;
+          font-size: 13px;
+        }
+      }
+    }
+  
+    .display_list {
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 700px) {
+    .display_list {
+      width: 90%;
+    }
+  }
+  
+  .deleteButton {
+    border: none;
+    background: none;
+    color: red;
+    float: right;
+  }
+  .updateButton {
+    border: none;
+    background: none;
+    color: rgb(36, 36, 129);
+    float: right;
+  }
+  
+  .inline_style {
+    display: inline-block;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  
+  .close_button {
+    border: none;
+    background: none;
+    font-size: 30px;
+    position: relative;
+    left: 90%;
+    color: white;
+  }
+  
+  .line-through {
+    text-decoration: line-through;
+  }
+  
